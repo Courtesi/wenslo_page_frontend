@@ -1,0 +1,52 @@
+const timelineElements = [
+  {
+    id: 1,
+    title: "Graduated - University of California, Irvine",
+    location: "Irvine, California",
+    description: "Completed my degree in Computer Science with a specialization in Information",
+    date: "September 2020 - June 2024",
+    icon: "school",
+  },
+  {
+    id: 2,
+    title: "Software Developer Contractor - Environmental Development Project",
+    location: "Remote",
+    description: "Contributed to Environmental Development Project, implemented a 3D gravity mesh generation application component",
+    date: "August 2023 - August 2024",
+    icon: "work",
+    color: "purple",
+    tech: ["JavaScript", "React", "Node.js", "SQL"],
+  },
+  {
+    id: 3,
+    title: "Coding Instructor - iD Tech",
+    location: "Irvine, California",
+    description: "Taught Python and Machine Learning at a summer-long coding camp for children ages 7-17",
+    date: "June 2024 - August 2024",
+    icon: "work",
+    color: "yellow",
+    tech: ["React", "HTML", "CSS", "JavaScript", "Angular"],
+  },
+  {
+    id: 4,
+    title: "Software Developer Contractor - Elite Sedation",
+    location: "Remote",
+    description: "Optimized and automated the credential reminder system for throughput to HR and providers/PRNs",
+    date: "January 2025 - Present",
+    icon: "work",
+    color: "red",
+    tech: ["Node.js", "JavaScript", "SQL", "Python"],
+  },
+  {
+    id: 5,
+    title: "On the Grind",
+    location: "Everywhere",
+    description: "Looking for employment while picking up new skills",
+    date: "Present",
+    icon: "work",
+    color: "orange",
+    tech: ["JavaScript", "React", "HTML", "CSS", "Python"],
+  },
+];
+
+export default timelineElements.reverse();
