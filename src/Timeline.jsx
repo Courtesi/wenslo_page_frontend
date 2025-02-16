@@ -57,7 +57,7 @@ export default function Timeline({defaultColor}) {
             <div id = "right-screen" className="bg-sky-500 lg:max-h-screen lg:sticky lg:top-0 lg:overflow-y-auto place-items-center">
                 <div className="w-7/10 mt-20">
                     <div className="border-b pb-10 border-slate-900 max-w-full">
-                        <div className="">
+                        <div className="items-center justify-center">
                             <div className="text-4xl mb-3 font-bold">Welcome to my web portfolio!</div>
                             <div>This page highlights the important parts of my education, projects, and experience! I'm a software engineer 
                                 who's currently looking to have his chance in the industry. I'm interested in creating projects that support
