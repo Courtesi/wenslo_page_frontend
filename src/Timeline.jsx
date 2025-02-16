@@ -43,8 +43,8 @@ export default function Timeline({defaultColor}) {
                     <div className="w-55">
                         <img src={ProfilePhoto} className="rounded-full drop-shadow-2xl w-55"/>
                     </div>
-                    <div className="flex flex-col gap-10 p-10 w-75">
-                        <div className="border-b pb-3 mt-5 border-dotted text-center text-gray-800 text-font-bold text-4xl drop-shadow-xl">Curtis Chang</div>
+                    <div className="flex flex-col gap-10 lg:p-10 w-75">
+                        <div className="border-b pb-3 mt-5 border-dotted text-center text-gray-800 text-font-bold text-2xl lg:text-4xl drop-shadow-xl">Curtis Chang</div>
                         <div className="mt-5 border-b pb-3 border-dotted text-center drop-shadow-xl">Software/Security Engineer</div>
                         <div className="border-b pb-3 border-dotted text-center drop-shadow-xl">
                             <ClipboardCopy copyText={"curtischang@wenslo.me"}/>
@@ -100,7 +100,7 @@ export default function Timeline({defaultColor}) {
                                         date={element.date}
                                         dateClassName="date"
                                         iconStyle={{background: "#DBD9D1"}}
-                                        icon = {isWorkIcon ? <WorkIcon className="scale-200 rounded-full xl:scale-290"/> : <SchoolIcon className="scale-200 rounded-full xl:scale-290" />}
+                                        icon = {isWorkIcon ? <WorkIcon className="max-w-100 rounded-full scale-200 lg:scale-290"/> : <SchoolIcon className="max-w-100 rounded-full scale-200 lg:scale-290" />}
                                     >
 
                                         <h3 className="font-bold text-lg">
