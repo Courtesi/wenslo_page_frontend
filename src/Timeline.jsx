@@ -1,7 +1,6 @@
 
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import Split from 'react-split';
 
 import timelineElements from "./assets/timelineElements";
 import projects from "./assets/projects";
@@ -38,15 +37,15 @@ export default function Timeline({defaultColor}) {
 
     return (
         
-        <Split className="flex" gutterSize={2} gutterAlign="center" direction="horizontal" sizes={[30, 80]} expandToMin={true}>
-            <div id = "left-screen" className="items-center flex flex-col">
-                <div className="mt-50 place-items-center flex flex-col text-3vh">
-                    <div className="w-50">
-                        <img src={ProfilePhoto} className="rounded-full drop-shadow-2xl"/>
+        <div className="flex flex-col lg:flex-row">
+            <div id = "left-screen" className="items-center p-0 lg:p-20 border-b lg:border-r lg:border-b-0 border-blue-800">
+                <div className="p-20 lg:p-0 items-center lg:mt-30 lg:place-items-center justify-center flex flex-row lg:flex-col text-3vh">
+                    <div className="w-55">
+                        <img src={ProfilePhoto} className="rounded-full drop-shadow-2xl w-55"/>
                     </div>
-                    <div className="flex flex-col gap-10 p-10">
-                        <div className="border-b pb-3 border-dotted text-center text-gray-800 text-font-bold text-4xl drop-shadow-xl">Curtis Chang</div>
-                        <div className="mt-10 border-b pb-3 border-dotted text-center drop-shadow-xl">Software/Security Engineer</div>
+                    <div className="flex flex-col gap-10 p-10 w-75">
+                        <div className="border-b pb-3 mt-5 border-dotted text-center text-gray-800 text-font-bold text-4xl drop-shadow-xl">Curtis Chang</div>
+                        <div className="mt-5 border-b pb-3 border-dotted text-center drop-shadow-xl">Software/Security Engineer</div>
                         <div className="border-b pb-3 border-dotted text-center drop-shadow-xl">
                             <ClipboardCopy copyText={"curtischang@wenslo.me"}/>
                         </div>                        
@@ -55,7 +54,7 @@ export default function Timeline({defaultColor}) {
                 </div>
             </div>
             
-            <div id = "right-screen" className="bg-sky-500 max-h-screen sticky top-0 overflow-y-auto place-items-center">
+            <div id = "right-screen" className="bg-sky-500 lg:max-h-screen lg:sticky lg:top-0 lg:overflow-y-auto place-items-center">
                 <div className="w-7/10 mt-20">
                     <div className="border-b pb-10 border-slate-900 max-w-full">
                         <div className="">
@@ -124,13 +123,13 @@ export default function Timeline({defaultColor}) {
                         <div>
                             <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
                         </div>
-                        <div className="grid grid-cols-2 lg:grid-cols-3">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3">
                             {projects.map((element) => {
                                 return (
                                     <a key={element.name} className="" target="_blank" href={`${element.html_url}`}>
                                         <div className="m-5 p-10 border rounded-lg bg-stone-200 hover:shadow-2xl hover:opacity-75 hover:scale-110 duration-300">
                                             
-                                            <div className="text-xl border-b flex items-center justify-center">
+                                            <div className="text-xl lg:text-3xl xl:text-xl border-b flex items-center justify-center">
                                                 <div className="flex">
                                                     {element.name}
                                                 </div>
@@ -178,7 +177,7 @@ export default function Timeline({defaultColor}) {
             </div>
                 
             
-        </Split>
+        </div>
         
         // <div>
         //     {timelineElements.map((element) => {
